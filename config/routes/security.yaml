@@ -1,3 +1,39 @@
 _security_logout:
     resource: security.route_loader.logout
     type: service
+
+api_users_:
+    path: /api/users
+    controller: App\Controller\Api\UserController::index
+
+index:
+    path: /
+    controller: App\Controller\Api\UserController::index
+
+api_login:
+    path: /api/login
+    controller: App\Controller\Api\LoginController::login
+
+
+
+
+
+create:
+    path: /api/users
+    controller: App\Controller\Api\UserController::create
+
+show:
+    path: /api/users/{id}
+    controller: App\Controller\Api\UserController::show
+update:
+    path: /api/users/{id}
+    controller: App\Controller\Api\UserController::update
+
+delete:
+    path: /api/users/{id}
+    controller: App\Controller\Api\UserController::delete
+
+    
+
+
+
